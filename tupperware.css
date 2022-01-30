@@ -1,8 +1,11 @@
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 
 
 
@@ -55,6 +58,7 @@ a{
 
 
 
+
 * {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0}
 .mySlides {display: none}
@@ -71,17 +75,20 @@ img {vertical-align: middle;}
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
+  top: 40%;
+  width: 5%;
+  padding: 50px;
   margin-top: -22px;
-  color: white;
+  color: black;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 80px;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  border-radius: 0 7px 7px 0;
   user-select: none;
 }
+
+
+
 
 /* Position the "next button" to the right */
 .next {
@@ -117,8 +124,8 @@ img {vertical-align: middle;}
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
+  height: 30px;
+  width: 30px;
   margin: 0 2px;
   background-color: #bbb;
   border-radius: 50%;
@@ -152,6 +159,189 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
+
+
+
+
+
+
+
+.container {
+ display: flex;
+padding: left 2%;
+padding-top: 20px;
+
+  
+  
+}
+
+.retro1 {
+ 
+ padding-left: 2% ;
+}
+.retro2{
+ 
+padding-left: 2%;
+}
+.retro3
+{
+  padding-left: 2%;
+}
+.retro4
+{
+  padding-left: 2%;
+}
+
+
+
+
+
+.overlay {
+  position: absolute; 
+  bottom: 40%;
+  top: 25%;
+  left: 40%; 
+  background:  rgba(40, 55, 71,0.7);
+  background:  rgba(40, 55, 71, 0.7); /* Black see-through */
+  color: #f1f1f1; 
+  width: 120%;
+  height: 75%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  padding-top: 50%;
+}
+
+.container:hover .overlay 
+{
+ 
+  opacity: 9;
+}
+.category{
+ display: inline-flex;
+ padding-left:10%;
+ 
+}
+.img2{
+  padding-top: 15%;
+ 
+}
+.info
+{
+ padding-bottom: 0%;
+ padding-left: 10%;
+
+ 
+ font-family: Staatliches Regular 400;
+}
+.cost
+{
+   padding-bottom: 0%;
+  padding-left: 10%;
+  color: #0B5345;
+  font-size: 150%;
+  display: inline-flex;
+}
+.btn
+{
+  
+ width: 220px;
+ height: 60px;
+ border: none;
+ color: white;
+ background-color:rgb(11, 83, 69); 
+ border-radius: 5px;
+ box-shadow: inset 0 0 0 0 #82E0AA ;
+ transition: ease-out 0.3s;
+ font-size:2rem;
+ outline:none; 
+}
+
+.btn:hover
+{
+	box-shadow:inset 0 100px 0 0 rgb( 93, 173, 226); 
+  color: black; 
+}
+@media only screen and (max-width:100px)
+{
+  .retro1, .retro2, .retro3, .retro4, {
+
+    padding-right: 20%;
+    width: 100%;
+  }
+}
+
+
+
+
+/*lunch box*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+.logo{
+display: inline-block;
+}
+
+
+
+
+
+
+.navbar
+{
+  display: flex;
+  align-items: center;
+  padding: 0px;
+}
+nav{
+  flex: 1;
+  text-align: left;
+}
+nav ul{
+  display: inline-block;
+  list-style: none;
+  
+
+}
+nav ul li
+{
+display: inline-block;
+margin-right: 20px;
+padding: top;
+
+}
+nav ul li::after
+{
+content: '';
+width: 0px;
+height: 5px;
+background: #f44336;
+display:block;
+margin: auto;
+transition: 0.5s;
+}
+nav ul li:hover::after
+{
+  width: 100%;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+ 
+}
+
+
+
+
+
 
 
 
